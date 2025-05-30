@@ -53,10 +53,11 @@ public class Order {
 	@Override
 	public String toString() {
 		return "Order{"+
-				 "memberId" + memberId +
-				 "itemNAme" +itemName + "/" +
-				 "itemprice" +itemPrice +
-				 "discountPrice" +discountPrice+
+				 ",  memberId=" + memberId +
+				 ",  itemName=" +itemName + "/" +
+				 ",  itemprice=" +itemPrice +
+				 ",  discountPrice=" +discountPrice+
 				 "}";
+
 	}
 }
