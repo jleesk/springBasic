@@ -31,6 +31,7 @@ public class Order {
 	}
 
 	public void setItemName(String itemName) {
+
 		this.itemName = itemName;
 	}
 
@@ -39,10 +40,12 @@ public class Order {
 	}
 
 	public void setItemPrice(int itemPrice) {
+
 		this.itemPrice = itemPrice;
 	}
 
 	public int getDiscountPrice() {
+
 		return discountPrice;
 	}
 
@@ -53,10 +56,11 @@ public class Order {
 	@Override
 	public String toString() {
 		return "Order{"+
-				 "memberId" + memberId +
-				 "itemNAme" +itemName + "/" +
-				 "itemprice" +itemPrice +
-				 "discountPrice" +discountPrice+
+				 ",  memberId=" + memberId +
+				 ",  itemName=" +itemName + "/" +
+				 ",  itemprice=" +itemPrice +
+				 ",  discountPrice=" +discountPrice+
 				 "}";
+
 	}
 }
