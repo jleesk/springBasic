@@ -8,7 +8,10 @@ import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 
 import java.lang.management.MemoryManagerMXBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
@@ -21,6 +24,7 @@ public class OrderServiceImpl implements OrderService{
  //   private final DiscountPolicy discountPolicy = new FixDiscountPolicy(); //정책변경
     private final DiscountPolicy discountPolicy;
 
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
         this.memberRepository =memberRepository;
         this.discountPolicy =discountPolicy;
