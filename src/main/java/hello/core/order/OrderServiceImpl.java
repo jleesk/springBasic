@@ -12,6 +12,12 @@ import java.lang.management.MemoryManagerMXBean;
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
+
  //   private final DiscountPolicy discountPolicy = new FixDiscountPolicy(); //정책변경
     private final DiscountPolicy discountPolicy;
 
