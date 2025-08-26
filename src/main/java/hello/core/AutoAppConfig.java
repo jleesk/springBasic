@@ -6,6 +6,10 @@ import org.springframework.context.annotation.FilterType;
 
 @Configuration
 @ComponentScan(
+    // 위치 선언해야하지만, 기본적으로 안하면, 상위 패키지들 모두 검색하게 됨.
+   // basePackages = "hello.core.member",
+  // basePackageClasses = AutoAppConfig.class,
+
   //AppConfig 소스와 충돌 방지 위해 제외함.
   excludeFilters = @ComponentScan.Filter(type= FilterType.ANNOTATION, classes = Configuration.class)
 )
