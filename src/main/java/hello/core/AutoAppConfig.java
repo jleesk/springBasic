@@ -22,7 +22,8 @@ import org.springframework.context.annotation.FilterType;
 )
 public class AutoAppConfig {
 
-	@Bean
+/*	충돌 테스트로 오류 남.
+    @Bean
 	OrderService orderService(MemberRepository memberRepository, DiscountPolicy discountPolicy){
 		return new OrderServiceImpl(memberRepository, discountPolicy);
 	}
@@ -31,5 +32,5 @@ public class AutoAppConfig {
 	MemberRepository memberRepository(){
 		return new MemoryMemberRepository();
 	}
-
+*/
 }
