@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor
+
 public class OrderServiceImpl implements OrderService{
 
 
@@ -32,15 +32,15 @@ public class OrderServiceImpl implements OrderService{
     }
 */
 
-/*  lombok적용으로 삭제
+
   @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
-        System.out.println("memberRepository = " + memberRepository);
-        System.out.println("discountPolicy = " + discountPolicy);
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy rateDiscountPolicy){
+       // System.out.println("memberRepository = " + memberRepository);
+       // System.out.println("discountPolicy = " + rateDiscountpolicy);
         this.memberRepository =memberRepository;
-        this.discountPolicy =discountPolicy;
+        this.discountPolicy = rateDiscountPolicy;
     }
-*/
+
    /* @Autowired
     public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy){
         this.memberRepository =memberRepository;
@@ -60,4 +60,5 @@ public class OrderServiceImpl implements OrderService{
     public MemberRepository getMemberRepository() {
         return memberRepository;
     }
+
 }
